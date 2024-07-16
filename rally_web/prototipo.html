@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body{
+        background-color: antiquewhite;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'open sans';
+}
+nav{
+    max-width: 900px;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal >li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color: red;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color:black;
+}
+.menu-horizontal li:hover .menu-vertical{
+display:block ;
+}
+.menu-vertical li:hover{
+    background-color:gray;
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px;
+} 
+
+
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<nav>
+    <ul class="menu-horizontal">
+        <li><a href="#">inicio</a></li>
+        <li>
+            <a href="#">Destinos</a>
+            <ul class="menu-vertical">
+                <li><a href="#">Catedral de leon</a></li>
+                <li><a href="#">Volcan cerro negro</a></li>
+                <li><a href="#">sutiaba</a></li>
+                <li><a href="#">peñitas y poneloya</a></li>
+                <li><a href="#">Centro de Artes Ortiz Gurdian</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contacto</a>
+            <ul class="menu-vertical">
+                <li><a href="#">Correo electronico</a></li>
+                <li><a href="#">Wattsapp</a></li>
+                <li><a href="#">Dirreccion</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Catalogo</a>
+            <ul class="menu-vertical">
+                <li><a href="#">PROXIMAMENTE</a></li>
+                <li><a href="#">PROXIMAMENTE</a></li>
+                <li><a href="#">PROXIMAMENTE</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>
+
+</body>
+</html>

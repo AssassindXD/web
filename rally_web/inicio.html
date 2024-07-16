@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+body{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: skyBlue(135,206,235);
+}
+h1{
+    text-align: center;
+}
+.arriba {
+    background-color: #4784c2;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    
+}
+.arriba nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+.arriba nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-horizontal >li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+.menu-horizontal > li:hover{
+    background-color: red;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color:black;
+}
+.menu-horizontal li:hover .menu-vertical{
+display:block ;
+}
+.menu-vertical li:hover{
+    background-color:gray;
+}
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px;
+} 
+.lista{
+    box-shadow: 2px 2px 2px 2px;
+    border: solid 2px black;
+    max-width: 900px;
+    margin: auto;
+    background-color: #2c3e50;
+    font-size: 20px;
+    margin-top: 50px;
+}
+h2{
+    text-align: center;
+}
+.popular{
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+}
+   article{
+    background-image: url(img/fondo1.jpeg);
+    background-size: cover;
+    height: 250px;
+    border: solid black 4px;
+ text-align: center;
+ margin-left: 7.5%;
+ margin-right: 7.5%;
+   }
+   article a {
+    opacity: 1;
+   }
+   article input{
+    opacity: 1;
+   }
+   .imgg{
+ height: 100px;
+ width: 70px;
+   }
+   a{
+ font-weight: bold;
+   }
+   .lugar{
+    list-style: none;
+    display: flex;
+    justify-content:space-around ;
+   }
+   .lugar >li>a{
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+   }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>innovatour</title>
+    
+</head>
+<body>
+    <header class="arriba">
+        <img class="imgg" src="img/logo.jpeg" alt="Libro 1">
+        <h1>INNOVA TOUR</h1>
+        <nav class="lista">
+            <ul class="menu-horizontal">
+                <li><a href="inicio.html">inicio</a></li>
+                <li>
+                    <a href="#">Destinos</a>
+                    <ul class="menu-vertical">
+                        <li><a href="catedral.html">Catedral de leon</a></li>
+                        <li><a href="cerronegro.html">Volcan cerro negro</a></li>
+                        <li><a href="sutiava.html">sutiaba</a></li>
+                        <li><a href="playas.html">peñitas y poneloya</a></li>
+                        <li><a href="ortiz_gurdian.html">Centro de Artes Ortiz Gurdian</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacto</a>
+                    <ul class="menu-vertical">
+                        <li><a href="santotoruno8@gmail.com">Correo electronico</a></li>
+                        <li><a href="#">Wattsapp</a></li>
+                        <li><a href="#">Dirreccion</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Catalogo</a>
+                    <ul class="menu-vertical">
+                        <li><a href="#">PROXIMAMENTE</a></li>
+                        <li><a href="#">PROXIMAMENTE</a></li>
+                        <li><a href="#">PROXIMAMENTE</a></li>
+                    </ul>
+                </li> 
+            </ul>      
+            
+        </nav>
+    </header>
+
+   <form class="caja">
+
+    <h1>un mundo para explorar</h1>
+    <p>un mundo, una vida</p>
+    <article>
+        <header>
+            <nav class="cuadro">
+              
+            <ul>
+            <a href="">Destino</a><br><br>
+            <input type="text" name="destinos" placeholder="DESTINOS"/><br>
+            <a href="">Rutas</a><br><br>
+            <input type="text" name="Rutas" placeholder="RUTAS"/><br>
+           <a href=""> precios</a> <br><br>
+           <input type="text" name="precios" placeholder="PRECIOS"/><br><br>
+            </ul>
+      
+            </nav>
+        </header>
+    </article>
+   </form>   
+
+</div>
+<h2>Lugares mas visitados</h2>
+<div class="popular">
+    <div>
+        <img src="img/1.jpeg" alt="Libro 1">
+        <a href="https://maps.app.goo.gl/H9ZC1wq3ruLZ7MqV8"><h4>Museo Ruben Dario</h4></a> 
+        <p>Descripción breve</p>
+    </div>
+    <div>
+        <img src="img/2.jpeg" alt="Libro 2">
+        <a href="https://maps.app.goo.gl/6Pdvh2nY9UuoX4ts5"><h4>centro ortiz gurdian</h4></a> 
+        <p>Descripción breve</p>
+       
+    </div>
+    <div>
+        <img src="img/3.jpeg" alt="Libro 3">
+        <a href="https://maps.app.goo.gl/pzFw9W5bZZDYsTKz5"><h4>catedral de Leon</h4></a> 
+        <p>Descripción breve </p>
+    </div>
+
+</body>
+</html>
